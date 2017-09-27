@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+@font-face {
+	font-family: 'Gilroy-Light';
+	src: url('../fonts/Gilroy-Light.otf') format('opentype');
+	font-weight: light;
+}
+
+@font-face {
+	font-family: 'Gilroy-ExtraBold';
+	src: url('../fonts/Gilroy-ExtraBold.otf') format('opentype');
+	font-weight: bold;
+}
+
+body {
+	margin: 0 !important;
+	height: 100%;
+  background-color: whitesmoke;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+
+.footer-title {
+  font-family: 'Gilroy-ExtraBold'
+}
+
+p {
+	font-family: 'Gilroy-Light';
+	margin: 1.5rem;
+}
+
+h1 {
+	font-family: 'Gilroy-ExtraBold';
+}
+
+.text-primary {
+	color: #00d1b2
+}
+
+.text-danger {
+	color: #ff3860
+}
+
+.fixed {
+	position: fixed
+}
+
+.home-hero-title {
+	font-family: 'Gilroy-Light';
+	font-size: 3.5rem;
+}
+
+.home-hero-subtitle {
+	font-family: 'Gilroy-ExtraBold';
+	font-size: 4rem;
+}
+
+.home-hero-credits {
+	font-family: 'Gilroy-Light';
+	font-size: 1.5rem;
+  padding-top: 15px
+}
+
+.text-center {
+	text-align: center;
+}
+
+.fluid {
+	width: 100%
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
