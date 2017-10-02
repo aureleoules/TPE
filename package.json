@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "NODE_ENV='dev' webpack",
     "start": "webpack-dev-server",
-    "builddev": "NODE_ENV='dev' webpack --progress --profile --colors",
-    "buildprod": "NODE_ENV='prod' webpack --progress --profile --colors"
+    "builddev": "set NODE_ENV='dev' webpack --progress --profile --colors",
+    "buildprod": "webpack --progress --profile --colors"
   },
   "license": "ISC",
   "dependencies": {

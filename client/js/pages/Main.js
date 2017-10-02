@@ -1,6 +1,8 @@
 import React from 'react';
+import CompositionBonbon from './CompositionBonbon';
+import DifferentesGelatines from './DifferentesGelatines';
 
-class Home extends React.Component {
+class Main extends React.Component {
 
     render() {
         return(
@@ -19,10 +21,12 @@ class Home extends React.Component {
                         </p>
                         </div>
                     </div>
-                </section>            
+                </section>
+                <CompositionBonbon/>
+                <DifferentesGelatines/>
             </div>
         )
     }
 }
 
-export default Home;
+export default Main;

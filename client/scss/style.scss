@@ -77,3 +77,26 @@ h1 {
 	align-items: center;
 	justify-content: center;
 }
+
+.page {
+		min-height: 100vh;
+	  font-size: 1.2rem;
+
+		.composition {
+			background-color: #fafafa;
+		}
+
+
+}
+
+.gelatines {
+		background-color: #00d1b2;
+		color: #fff;
+		.title {
+			color: #fff;
+		}
+}
+
+.text-container {
+	max-width: 700px
+}
