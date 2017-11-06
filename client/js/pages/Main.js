@@ -1,14 +1,30 @@
 import React from 'react';
-import CompositionBonbon from './CompositionBonbon';
-import DifferentesGelatines from './DifferentesGelatines';
+import LeBonbon from '../pages/LeBonbon';
+import UneAlternativeVegetarienne from '../pages/UneAlternativeVegetarienne';
+import FabricationDuBonbonVegetarien from '../pages/FabricationDuBonbonVegetarien';
+import ScrollReveal from 'scrollreveal';
+window.sr = ScrollReveal({ reset: true });
 
 class Main extends React.Component {
+
+    componentDidMount() {
+        sr.reveal('.title');
+        sr.reveal('.partie');
+        sr.reveal('.home-hero-credits');
+        sr.reveal('h2');
+    }
+
+    scroll = () => {
+        document.querySelector('#bonbon').scrollIntoView({ 
+            behavior: 'smooth' 
+        });
+    }
 
     render() {
         return(
             <div style={{minHeight: "100vh"}}>
-                <section className="hero is-fullheight is-primary" id="hero">
-                    <div className="hero-body">
+                <section className="page hero is-fullheight is-primary" id="hero">
+                    <div style={{justifyContent: "center"}} className="hero-body">
                         <div className="container has-text-centered tracking-in-expand not-selectable">
                         <h1 className="title home-hero-title">
                             Sujet de TPE:
@@ -20,10 +36,13 @@ class Main extends React.Component {
                             Réalisé par <b>Aurélien</b>, <b>Kristijan</b> et <b>Aurèle</b>.
                         </p>
                         </div>
+                    <a className="white" onClick={this.scroll}><span></span>Commencer</a>
                     </div>
                 </section>
-                <CompositionBonbon/>
-                <DifferentesGelatines/>
+                <LeBonbon/>
+                <UneAlternativeVegetarienne/>
+                <FabricationDuBonbonVegetarien/>
+
             </div>
         )
     }
