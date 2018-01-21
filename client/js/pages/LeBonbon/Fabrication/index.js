@@ -16,7 +16,7 @@ class Fabrication extends React.Component {
                 </div>
                 <div className={`modal ${this.state.modal ? 'is-active' : ''}`}>
                     <div className="modal-background"></div>
-                    <div className="modal-content animated fadeIn">
+                    <div className="modal-content fade-in">
                         <button className="close is-large" aria-label="close" onClick={() => this.setState({modal: false})}>
                             <img src="/images/close.png"/>
                         </button>                        <div className="content-modal">
