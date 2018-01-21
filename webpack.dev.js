@@ -28,8 +28,14 @@ module.exports = {
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: 'url'
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/,
+                loader: "file-loader",
+                query: {
+                    name: 'img/[name].[ext]'
+                }
             }
-            
         ]
     },
     output: {
@@ -38,6 +44,11 @@ module.exports = {
         sourceMapFilename: 'bundle.js.map'
     },
     plugins: [
-        new webpack.optimize.OccurrenceOrderPlugin()
+        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.DefinePlugin({ //Config
+            "process.env": { 
+                NODE_ENV: JSON.stringify("dev") 
+            }
+        })
     ]
 };

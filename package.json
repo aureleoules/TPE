@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV='dev' webpack",
-    "start": "webpack-dev-server",
-    "builddev": "set NODE_ENV='dev' webpack --progress --profile --colors",
-    "buildprod": "webpack --progress --profile --colors"
+		"start": "webpack-dev-server --env.dev --hot --inline --config ./webpack.dev.js ",
+		"build:dev": "webpack --env.dev --progress --profile --colors --config ./webpack.dev.js",
+		"build:prod": "webpack --progress --profile --colors --config ./webpack.prod.js"
   },
   "license": "ISC",
   "dependencies": {

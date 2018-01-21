@@ -16,7 +16,12 @@
 body {
 	margin: 0 !important;
 	height: 100%;
-  background-color: whitesmoke;
+	background-color: whitesmoke;
+}
+
+img {
+	border-radius: 15px;
+	max-width: 95%;
 }
 
 .footer {
@@ -64,6 +69,11 @@ h1 {
   padding-top: 15px
 }
 
+.snow {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
 .text-center {
 	text-align: center;
 }
@@ -141,7 +151,7 @@ h1 {
 
 .is-primary {
 	h1 {
-		color: #fafafa!important;
+		color: #fafafa;
 	}
 }
 .container {
@@ -245,4 +255,8 @@ h1 {
 	40% {
 	  transform: rotate(-45deg) translate(0, 0);
 	}
-  }
+	}
+	
+.content > ul{
+	list-style: circle!important;	
+}
