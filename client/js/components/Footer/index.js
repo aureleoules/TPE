@@ -18,6 +18,13 @@ class Footer extends React.Component {
                             , <strong><a style={link} href="https://www.instagram.com/____kristijan____/" target="_blank">Kristijan </a></strong>
                             et <strong><a style={link} href="https://github.com/aureleoules" target="_blank">Aurèle</a></strong>.
                         </p>
+                        <p>
+                            Site developpé par Aurèle
+                            <br/>
+                            <a href="https://github.com/aureleoules/TPE" target="_blank">
+                                <img src="/images/github.png" width="20" style={{marginTop: 5}}/>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </footer>
