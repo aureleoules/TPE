@@ -30,7 +30,7 @@ class Main extends React.Component {
                             Sujet de TPE:
                         </h1>
                         <h2 className="subtitle home-hero-subtitle">
-                            Comment faire un bonbon végétarien?
+                        Comment remplacer la gélatine de porc afin de faire un bonbon végétarien?
                         </h2>
                          <p className="home-hero-credits">
                             Réalisé par <b>Aurélien</b>, <b>Kristijan</b> et <b>Aurèle</b>.
