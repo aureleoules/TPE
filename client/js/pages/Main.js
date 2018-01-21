@@ -7,11 +7,20 @@ window.sr = ScrollReveal({ reset: true });
 
 class Main extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            count: 0
+        }
+    }
+
     componentDidMount() {
         sr.reveal('.title');
         sr.reveal('.partie');
         sr.reveal('.home-hero-credits');
         sr.reveal('h2');
+
+        
     }
 
     scroll = () => {
@@ -20,13 +29,21 @@ class Main extends React.Component {
         });
     }
 
+    onSubjectClick = () => {
+        this.setState({count: this.state.count + 1});
+        if(this.state.count === 10) {
+            this.props.snow();
+        }
+
+    }
+
     render() {
         return(
             <div style={{minHeight: "100vh"}}>
                 <section className="page hero is-fullheight is-primary" id="hero">
                     <div style={{justifyContent: "center"}} className="hero-body">
                         <div className="container has-text-centered tracking-in-expand not-selectable">
-                        <h1 className="title home-hero-title">
+                        <h1 className="title home-hero-title" onClick={() => this.onSubjectClick()}>
                             Sujet de TPE:
                         </h1>
                         <h2 className="subtitle home-hero-subtitle">
@@ -42,7 +59,6 @@ class Main extends React.Component {
                 <LeBonbon/>
                 <UneAlternativeVegetarienne/>
                 <FabricationDuBonbonVegetarien/>
-
             </div>
         )
     }
