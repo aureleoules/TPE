@@ -14,7 +14,7 @@ class LeBonbon extends React.Component {
 
     render() {
         return (
-            <section id="bonbon" className="page center lebonbon">
+            <section id="bonbon" className="page center lebonbon parallax" style={{backgroundImage: "url(images/sugar.jpeg)"}}>
                 <div className="container">
                     <h1 className="text-center title is-1">Le bonbon</h1>
                     <div className="parties parties-4">

@@ -19,13 +19,13 @@ class Histoire extends React.Component {
                     <div className="modal-background"></div>
                     <div className="modal-content fade-in">
                         <button className="close is-large" aria-label="close" onClick={() => this.setState({modal: false})}>
-                            <img src="/images/close.png"/>
+                            <img src="../../images/close.png"/>
                         </button>
                         <div className="content-modal">
                             <h1 className="has-text-centered">L'histoire du bonbon</h1>
                             <div className="columns" style={{marginTop: 15}}>
                                 <div className="column">
-                                    <img src="/images/intro.jpeg"/>
+                                    <img src="images/intro.jpeg"/>
                                 </div>
                                 <div className="column">
                                     <div className="content">

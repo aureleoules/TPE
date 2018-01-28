@@ -3,7 +3,6 @@ import React from 'react';
 class Footer extends React.Component {
     render() {
         const link = {
-            color: "#363636",
             cursor: "text"
         }
         return(
@@ -22,7 +21,7 @@ class Footer extends React.Component {
                             Site developpé par Aurèle
                             <br/>
                             <a href="https://github.com/aureleoules/TPE" target="_blank">
-                                <img src="/images/github.png" width="20" style={{marginTop: 5}}/>
+                                <img src="images/github.png" width="64"/>
                             </a>
                         </p>
                     </div>

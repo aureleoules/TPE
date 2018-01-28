@@ -12,7 +12,7 @@ class UneAlternativeVegetarienne extends React.Component {
 
     render() {
         return (
-            <section id="alternative" className="page is-primary center alternative">
+            <section id="alternative" className="page is-primary center parallax alternative" style={{backgroundImage: "url(images/vegetarian.jpeg)"}}>
                 <div className="container">
                     <h1 className="text-center title is-1">Une Alternative Végétarienne</h1>
                     <div className="parties parties-2">

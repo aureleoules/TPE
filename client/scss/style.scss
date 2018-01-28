@@ -25,7 +25,15 @@ img {
 }
 
 .footer {
-  background-color: #f5f5f5;
+ 	background-color: #171515;
+	padding: 1rem 1.5rem 1rem;
+
+	a {
+		color: #fafafa
+	}
+	p {
+		color: #fafafa
+	}
 }
 
 .footer-title {
@@ -146,7 +154,7 @@ h1 {
 }
 
 .alternative {
-	background-color: #00D1B2;
+	background-color: #00d1b2;
 }
 
 .is-primary {
@@ -166,6 +174,7 @@ h1 {
 	border-radius: 15px;
 	h1 {
 		font-size: 3rem;
+		color: #333!important
 	}
 }
 
@@ -200,10 +209,10 @@ h1 {
 	position: absolute;
 	margin-top: 40vh;
 	transition: all 200ms ease-in-out;
-
+	color: #fafafa;
 	&:hover {
 		opacity: 0.5	;
-		color:#00D1B2;
+		color: #fafafa;
 	}	
 
 	&.white {
@@ -232,7 +241,7 @@ h1 {
 	animation: scrollAnim 2s infinite;
 	box-sizing: border-box;
 	border-width: 3px;
-	border-color: #00D1B2;
+	border-color: #fafafa;
   }
   @-webkit-keyframes scrollAnim {
 	0% {
@@ -278,4 +287,26 @@ h1 {
   -webkit-animation-duration:0.25s;
   -moz-animation-duration:0.25s;
   animation-duration:0.25s;
+}
+.parallax {
+	background-attachment: fixed;
+	background-size: cover;
+
+	h1 {
+		color:#fafafa
+	}
+
+	// &.main {
+	// 	background-image: url("images/main.jpg")
+	// }
+	// &.lebonbon {
+	// 	background-image: url("images/sugar.jpeg");
+	// }
+	// &.alternative {
+	// 	background-image: url("images/vegetarian.jpeg")
+	// }
+
+	// &.fabrication-vegetarien {
+	// 	background-image: url("images/fabrication.jpeg")
+	// }
 }

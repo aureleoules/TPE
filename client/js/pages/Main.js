@@ -18,9 +18,7 @@ class Main extends React.Component {
         sr.reveal('.title');
         sr.reveal('.partie');
         sr.reveal('.home-hero-credits');
-        sr.reveal('h2');
-
-        
+        sr.reveal('h2');        
     }
 
     scroll = () => {
@@ -40,14 +38,14 @@ class Main extends React.Component {
     render() {
         return(
             <div style={{minHeight: "100vh"}}>
-                <section className="page hero is-fullheight is-primary" id="hero">
+                <section className="page hero is-fullheight is-primary parallax main" id="hero" style={{backgroundImage: "url(images/main.jpg)"}}>
                     <div style={{justifyContent: "center"}} className="hero-body">
                         <div className="container has-text-centered tracking-in-expand not-selectable">
                         <h1 className="title home-hero-title" onClick={() => this.onSubjectClick()}>
                             Sujet de TPE:
                         </h1>
                         <h2 className="subtitle home-hero-subtitle">
-                        Comment remplacer la gélatine de porc afin de faire un bonbon végétarien?
+                        Comment remplacer la gélatine de porc dans un bonbon?
                         </h2>
                          <p className="home-hero-credits">
                             Réalisé par <b>Aurélien</b>, <b>Kristijan</b> et <b>Aurèle</b>.

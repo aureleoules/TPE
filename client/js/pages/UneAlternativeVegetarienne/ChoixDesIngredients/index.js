@@ -17,12 +17,12 @@ class ChoixDesIngredients extends React.Component {
                     <div className="modal-background"></div>
                     <div className="modal-content fade-in">
                         <button className="close is-large" aria-label="close" onClick={() => this.setState({modal: false})}>
-                            <img src="/images/close.png"/>
+                            <img src="images/close.png"/>
                         </button>                        <div className="content-modal is-default">
                             <h1 className="has-text-centered" style={{color: "#4a4a4a"}}>Choix des ingrédients</h1>
                             <div className="columns" style={{marginTop: 15}}>
                                 <div className="column">
-                                    <img src="/images/agar-agar.jpg"/>
+                                    <img src="images/agar-agar.jpg"/>
                                 </div>
                                 <div className="column">
                                     <div className="content">
